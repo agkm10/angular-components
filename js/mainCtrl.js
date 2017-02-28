@@ -10,7 +10,6 @@ angular.module("componentApp").controller("mainCtrl", function($scope) {
   }
 
   $scope.changeUserEmail = function(email) {
-      console.log("EMail")
       $scope.user.email = email;
   }
 })
