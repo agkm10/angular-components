@@ -10,8 +10,6 @@
           <div ng-controller="mainCtrl">
               <!--Let's insert our components here-->
               <nav-component></nav-component>
-                <p>Username in MainCtrl: {{user.name}}</p>
-                <p>Email in MainCtrl: {{user.email}}</p>
               <profile-component
                 user="user"
                 change-username="changeUsername(username)"
