@@ -6,5 +6,9 @@ angular.module("componentApp").component("profileComponent", {
         changeUserEmail: "&"
     },
     controller: function() {
+        this.clearInputs = function() {
+            this.newUsername = ""
+            this.newEmail = ""
+        }
     },
 })

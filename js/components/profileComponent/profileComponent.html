@@ -1,4 +1,4 @@
-<form ng-submit="$ctrl.changeUsername({username: $ctrl.newUsername})">
+<form ng-submit="$ctrl.changeUsername({username: $ctrl.newUsername}); $ctrl.clearInputs()">
     <p>Current Username: {{$ctrl.user.name}}</p>
     <label for="username">Change Username:</label>
     <input 
@@ -10,7 +10,7 @@
     <input type="submit" value="Submit username">
 </form>
 
-<form ng-submit="$ctrl.changeUserEmail({email: $ctrl.newEmail})">
+<form ng-submit="$ctrl.changeUserEmail({email: $ctrl.newEmail}); $ctrl.clearInputs()">
     <p>Current Email: {{$ctrl.user.email}}</p>
     <label for="email">Change Email:</label>
     <input 
@@ -21,3 +21,5 @@
     >
     <input type="submit" value="Submit email">
 </form>
+
+<button ng-click="$ctrl.clearInputs()">Clear Inputs</button>
