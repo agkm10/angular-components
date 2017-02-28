@@ -1,0 +1,21 @@
+<form ng-submit="$ctrl.changeUsername({username: $ctrl.newUsername})">
+    <label for="username">Change Username:</label>
+    <input 
+        type="text" 
+        id="username" 
+        placeholder="New username" 
+        ng-model="$ctrl.newUsername"
+    >
+    <input type="submit" value="Submit username">
+</form>
+
+<form ng-submit="$ctrl.changeUserEmail({email: $ctrl.newEmail})">
+    <label for="email">Change Email:</label>
+    <input 
+        type="text" 
+        id="email" 
+        placeholder="New email" 
+        ng-model="$ctrl.newEmail"
+    >
+    <input type="submit" value="Submit email">
+</form>
